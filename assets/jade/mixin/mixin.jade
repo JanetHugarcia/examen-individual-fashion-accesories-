@@ -1,0 +1,51 @@
+mixin droplist(linked)
+	.dropdown
+		button.btn.dropdown-toggle(type="button", id="dropdownMenu1" data-toggle="dropdown", aria-haspopup="true", aria-expanded="true")
+			img(src=linked, alt="")
+			span hola
+			span.caret
+		ul.dropdown-menu(aria-labelledby="dropdownMenu1")
+			li
+				a(href="#") Action
+			li 
+				a(href="#") Another
+
+
+
+mixin footerlist(h,a,b,c,d)
+	h3=h
+	ul
+		li
+			span.caret
+			a(href="#") #{a}
+		li
+			span.caret
+			a(href="#") #{b}
+		li 
+			span.caret
+			a(href="#") #{c}
+		li 
+			span.caret
+			a(href="#") #{d}
+
+mixin opcionesnav(pri,seg,ter)
+	.row.text-center
+		nav
+			a(href="#") #{pri}
+			a(href="#") #{seg}
+			a(href="#") #{ter}
+
+mixin ofertas(link)
+	.col-md-3
+		.img-bck
+			.img
+				img(src=link, alt="")
+			.descrip.text-center
+				p Deliver Wide
+				p
+					span.fa.fa-star
+					span.fa.fa-star
+					span.fa.fa-star
+					span.fa.fa-star
+					span.fa.fa-star
+				span.precio 228.00

@@ -1,0 +1,96 @@
+doctype html
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	block titleDocument
+		title Document
+	link(rel="stylesheets" href="assets/font-awesome/css/font-awesome.min.css")
+	link(rel="stylesheet", href="assets/css/main.css")
+body
+	header.bck-gris
+		.container
+			.row
+				.col-md-6.col-xs-12
+					p.comment Default Welcome Msg!
+				.col-md-6.text-right.col-xs-12
+					+droplist('assets/images/flag1.png')
+					+droplist('assets/images/flag1.png')
+					+droplist('assets/images/flag1.png')
+	section#search
+		.container
+			.col-md-4
+				.open.pdt
+					span.glyphicon.glyphicon-search 
+					span opening time
+						small 9:00 am - 10:00 pm
+			.col-md-4
+				h1
+					img(src="assets/images/logo.png", alt="accesories")
+			.col-md-4
+				.input-group.pdt
+					input.form-control(type="text",placeholder="Search" aria-describedby="basic-addon2")
+					span.input-group-addon(id="basic-addon2") @
+	section#menu2.bck-gris
+		.container
+			.col-md-6
+				ul.nav.nav-pills
+					li.active(role="presentacion")
+						a(href="index.html") Home
+					li(role="presentacion") 
+						a(href="contact.html") Contact
+			.col-md-6.text-right
+				.carrito
+					i.fa.fa-cart
+					span my cart
+					p 2 item(s) - $244.00
+	block section
+		section
+			.container
+				.row.text-center
+					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni deserunt doloribus laborum a optio earum aspernatur minus hic blanditiis voluptate maxime, quaerat, dolore atque, ipsam culpa aliquam saepe. Illo, quod.
+	footer.bck-gris
+		.container
+			.row.text-left
+				.col-md-3
+					h3 accesories
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quia quae, hic vitae quaerat! Sapiente saepe dignissimos, vero, fuga eius minima quaerat nemo cumque vitae sit unde, expedita non sint.
+					a.fa.fa-facebook(href="#")
+					a.fa.fa-twitter(href="#")
+					a.fa.fa-rss(href="#")
+					a.fa.fa-skype(href="#")
+					a.fa.fa-facebook(href="#")
+				.col-md-2
+					+footerlist('my account','My account', 'Order History', 'Wish List', 'Newsletter')
+				.col-md-2
+					+footerlist('about us','delivery information', 'privacy policiy','terms & conditions','abotu su')
+				.col-md-2
+					+footerlist('extras','brands','gift vouchers','affiliates','specials')
+				.col-md-3
+					h3 about us
+					p
+						span.fa.fa-map-marker
+						span 80901 marmora road, glasgow d04 89
+							small GR, new york
+					p
+						span.fa.fa-map-marker
+						span (0123)456789 <br> (0987)654321
+					p
+						span.fa.fa-map-marker
+						a(href="#") admin@bootexperts.com
+	.finalfooter
+		.container
+			.row
+				.col-md-6.footer
+					span Copyright © 2015 
+					a(href="#") BootExperts
+					span All rights reserved
+				.col-md-6.text-right
+					img(src="assets/images/payment.png", alt="")
+
+
+			
+	//bootstrap jquery
+	
+	script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+	script(src='assets/js/jquery.js')
+	script(src='assets/js/bootstrap.min.js')
